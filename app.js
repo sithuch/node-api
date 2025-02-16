@@ -10,18 +10,18 @@ app.listen(3000);
 
 app.get('/', (req, res) => {
     // res.send('<p>home page</p>');
-    res.render('index');
+    res.render('index', {title: 'Homie'});
 });
 
 app.get('/about', (req, res) => {
     // res.send('<p>about page</p>');
-    res.render('about');    
+    res.render('about',{title: 'About'});    
 });
-// redirect
-app.get('/about-us', (req, res) => {
-    res.redirect('/about');
-});
+// // redirect
+// app.get('/about-us', (req, res) => {
+//     res.redirect('/about');
+// });
 // 404 page
 app.use((req, res) => {
-    res.status(404).render('404');
+    res.status(404).render('404',{title: '404'});
 });
