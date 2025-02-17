@@ -11,8 +11,24 @@
         <h1>Home</h1>
         <h2>Welcome to my learning Node.js</h2>
         <nav>
-            <a href="/">Home page</a>
-            <a href="/about">About page</a>
+            <ul>
+                <li><a href="/">Home page</a></li>
+                <li><a href="/about">About page</a></li>
+                <li><a href="/blogs/create">Create a new post</a></li>
+            </ul>
         </nav>
+
+        <% if(blogs.length > 0){ %> 
+            <h2>My blogs</h2>
+            <ul>
+
+                <% blogs.forEach(blog => { %>
+                    <h2 class="title"><%= blog.title %></h2>
+                    <li class="snippet"><%= blog.snippet %></li>
+                <% }) %>
+            </ul>
+        <%} else {%>
+            <h2 >No blogs to show</h2>
+        <% } %>
     </body>
 </html>

@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blog |<%= title %></title>
+    <title><%= title %></title>
 </head>
 <body>
-    <h1>About page</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloremque!</p>
+    <h1>Create a new post</h1>
     <nav>
         <ul>
             <li><a href="/">Home page</a></li>
@@ -15,5 +14,11 @@
             <li><a href="/blogs/create">Create a new post</a></li>
         </ul>
     </nav>
+    <form action="forms" method="post">
+        <label for="title">Name</label>
+        <input type="text" name="title" id="title" placeholder="Title">
+        <label for="body">Password</label>
+        <input type="text" name="body" id="body" placeholder="Password">
+    </form>
 </body>
 </html>
