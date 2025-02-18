@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blog |<%= title %></title>
-</head>
+    <%- include('./partials/head.ejs') %>
 <body>
     <h1>About page</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, doloremque!</p>
-    <nav>
-        <ul>
-            <li><a href="/">Home page</a></li>
-            <li><a href="/about">About page</a></li>
-            <li><a href="/blogs/create">Create a new post</a></li>
-        </ul>
-    </nav>
+    <%- include('./partials/nav.ejs') %>
+    
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

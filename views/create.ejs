@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-</head>
+    <%- include('./partials/head.ejs') %>
 <body>
     <h1>Create a new post</h1>
-    <nav>
-        <ul>
-            <li><a href="/">Home page</a></li>
-            <li><a href="/about">About page</a></li>
-            <li><a href="/blogs/create">Create a new post</a></li>
-        </ul>
-    </nav>
+    <%- include('./partials/nav.ejs') %>
     <form action="forms" method="post">
         <label for="title">Name</label>
         <input type="text" name="title" id="title" placeholder="Title">
         <label for="body">Password</label>
         <input type="text" name="body" id="body" placeholder="Password">
     </form>
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>
