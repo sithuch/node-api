@@ -4,11 +4,13 @@
 <body>
     <h1>Create a new post</h1>
     <%- include('./partials/nav.ejs') %>
-    <form action="forms" method="post">
+    <form action="" method="post">
+        <h1>Log In</h1>
         <label for="title">Name</label>
-        <input type="text" name="title" id="title" placeholder="Title">
+        <input type="text" name="title" id="title" placeholder="Title" class="create">
         <label for="body">Password</label>
         <input type="text" name="body" id="body" placeholder="Password">
+        <button type="button">Login</button>
     </form>
     <%- include('./partials/footer.ejs') %>
 </body>

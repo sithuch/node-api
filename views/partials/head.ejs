@@ -2,7 +2,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Cthuch</title>
-    <style>
+   <style>
+        
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital@0;1&family=Shafarik&display=swap');
         * {
             margin: 0;
@@ -96,38 +97,44 @@
             background-color: #fff;
             color: #000;
         }
-        create-blog {
-            max-width: 400px;
+        form{
+            background-color: #fff;
+            display: grid;
+            align-items: center;
+            justify-content: center;
             margin: 0 auto;
+            padding: 20px;
+            max-width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form h1 {
             text-align: center;
-        }
-        .create-blog label {
-            text-align: left;
-            display: block;
-        }
-        .create-blog h2 {
-            font-size: 20px;
-            color: #f1356d;
-            margin-bottom: 30px;
-        }
-        .create-blog input, .create-blog textarea, .create-blog select {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
             width: 100%;
-            padding: 6px 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            box-sizing: border-box;
-            display: block;
         }
-        .create-blog button {
-            background-color: #f1356d;
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 10px 16px;
+            background-color: #016ABC;
             color: #fff;
-            border: 0;
-            padding: 8px;
-            border-radius: 8px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
-        .create-blog button:hover {
-            background-color: #f1356d;
+        form button:hover {
+            background: #0d8dee;
         }
     </style>
 </head>
