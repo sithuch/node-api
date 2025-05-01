@@ -5,3 +5,7 @@ exports.homePage = (req, res) => {
 exports.indexPage = (req, res) => {
   res.render('homePage', { title: 'Home Page' });
 }
+
+exports.logInPage = (req, res) => {
+  res.render('login', { title: 'Home Page' });
+}
